@@ -1,10 +1,11 @@
 @font-face {
-    font-family: 'cooper_hewittbold';
-    src: url('/Fonts/cooperhewitt-bold-webfont.woff2') format('woff2'),
-         url('/Fonts/cooperhewitt-bold-webfont.woff') format('woff');
+    font-family:'cooper_hewittbold';
+    src: url('Fonts/cooperhewitt-bold-webfont.woff2') format('woff2'),
+         url('./Fonts/cooperhewitt-bold-webfont.woff') format('woff'),
+        url('cooperhewitt-bold-webfont.woff2') format('woff2'),
+         url('cooperhewitt-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body, html{
@@ -15,7 +16,7 @@ body, html{
 }
 
 body{
-    background: url('/Images/SVG/background.svg') no-repeat;
+    background: url('/background.svg') no-repeat;
     background-size: cover;
     padding-bottom: 500px;
 }
