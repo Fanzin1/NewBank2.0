@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewBank - um novo conceito</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">   
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5dda139b8d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section id="inicio" style="padding: 0 15px;">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between mt-4">
+            <a style="font-size: 2em;" class="font-weight-bold navbar-brand text-white" href="">NewBank</a>
+            <button style="color: black;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span style="color: black;" class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" style="font-size: 1.2em; font-weight: 600;" id="menu">
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="nav-item ml-5 link">
+                        <a href="#inicio" class="text-dark nav-link mdc"><i class="fas fa-house-user"></i>&nbsp&nbsp&nbspInício</a>
+                    </li>
+                    <li class="nav-item ml-5 link">
+                        <a href="#beneficios" class="nav-link text-dark mdc"><i class="fas fa-wallet"></i>&nbsp&nbsp&nbspBenefícios</a>
+                    </li>
+                    <li class="nav-item ml-5 link">
+                        <a href="#fale" class="nav-link text-dark mdc"><i class="far fa-address-card"></i>&nbsp&nbsp&nbspFale conosco</a>
+                    </li>
+                    <li style="margin-right: 50px;" class="nav-item ml-5 link last">
+                        <a href="/login.html" class="nav-link text-dark mdc"><i class="fas fa-door-open"></i>&nbsp&nbsp&nbspEntrar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container txt" style="margin-top: 185px;">
+            <div style="width: 65%" class="ml-auto mr-auto prin">
+                <h1 class="text-uppercase text-center main" style="font-size: 5em;">Todo que você precisa na palma da mão</h1>
+                <p class="text-center" style="font-size: 1.2em;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+
+        </div>
+    </section>
+    <section id="beneficios" style="padding: 15px; margin-top: 450px;">
+        <div class="container text-dark mb-5">
+            <div>
+                <img class="subd" src="/Images/SVG/undraw_pay_online_b1hk.svg" width="450px">
+
+                <div class="mt-5 sub" style="width: 30%; float: right; ">
+                    <p style="font-size: 2.5em;" class="mt-3">Um banco que tem tudo, exceto o que você não precisa.</p>
+                </div>
+            </div>
+
+            <div class="row text-dark" style="clear: both; margin-top: 150px;">
+                <div class="col-md-3" style="text-align: center;">
+                    <i class="fas fa-globe-americas mb-2 icon"></i>
+                    <div class="alinha">
+                        <p>Faça compras em todo o mundo com o cartão internacional</p>
+                    </div>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <i class="fas fa-search-dollar mb-2 icon"></i>
+                    <div class="alinha">
+                        <p>Veja todas as informações sobre seu dinheiro com um clique</p>
+                    </div>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <i class="fab fa-creative-commons-nc mb-2 icon"></i>
+                    <div class="alinha">
+                        <p>Não pague anuidade, nem por saques ou transferências</p>
+                    </div>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <i icon class="fas fa-chart-area mb-2 icon"></i>
+                    <div class="alinha">
+                        <p>Invista seu dinheiro com facilidade, sem taxas e sem burocracia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fale">
+        <div class="virado">
+            <h1>FALE CONOSCO</h1>
+        </div>
+
+        <form action="" style="margin-top: 50px;">
+            <div class="form-group col-lg-4 col-sm-8">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" class="form-control">
+            </div>
+            <div class="form-group col-lg-4 col-sm-8">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" class="form-control">
+            </div>
+            <div class="form-group col-lg-4 col-sm-8">
+                <label for="telefone">Telefone:</label>
+                <input class="form-control" type="text" id="telefone" name="telefone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" />
+            </div>
+            <div class="form-group col-lg-4 col-sm-8">
+                <label for="mensagem">Mensagem: </label>
+                <textarea class="form-control" name="mensagem" id="mensagem" cols="10" rows="10"></textarea>
+
+                <button class="btn btn-outline-light mt-5">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+
+    <footer style="height: 100px; background-color: rgb(216, 216, 216); text-align: center; padding: 45px;">
+        <p  style="color: gray;">NewBank© - 2021</p>
+    </footer>
+
+
+    <script>
+        function mask(o, f) {
+            setTimeout(function() {
+                var v = mphone(o.value);
+                if (v != o.value) {
+                o.value = v;
+                }
+            }, 1);
+        }
+
+        function mphone(v) {
+            var r = v.replace(/\D/g, "");
+            r = r.replace(/^0/, "");
+            if (r.length > 10) {
+                r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+            } else if (r.length > 5) {
+                r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+            } else if (r.length > 2) {
+                r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+            } else {
+                r = r.replace(/^(\d*)/, "($1");
+            }
+            return r;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>

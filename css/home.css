@@ -1,0 +1,9 @@
+.menu-item{
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+}
+
+.menu-item:hover{
+    color: #E74517;
+    text-decoration: none;
+}
